@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "282334581305",
+    "project_id": "flutter-app-notificacion-f5e7d",
+    "storage_bucket": "flutter-app-notificacion-f5e7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282334581305:android:c197c19d7212434479b3e8",
+        "android_client_info": {
+          "package_name": "com.manuelcastro.push_notifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOadf5uwAREw1LMk4pCP-hzkq6_jRXpF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
