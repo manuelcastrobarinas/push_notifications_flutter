@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:push_notifications/firebase_options.dart';
 import 'package:push_notifications/pages/messages.dart';
 import 'package:push_notifications/pages/pages.dart';
+import 'package:push_notifications/services/push_notifications_services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await PushNotificationServices.init();
   runApp(const MyApp());
 }
 
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp( 
       title: 'Push notifications',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
